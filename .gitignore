@@ -1,0 +1,9 @@
+node_modules/
+dist/
+android/
+ios/
+public/fonts/*.ttf
+public/fonts/LICENSE-DejaVu.txt
+public/icon-*.png
+*.log
+.DS_Store

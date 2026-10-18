@@ -1,0 +1,34 @@
+{
+  "name": "calculadora-campo",
+  "version": "1.0.0",
+  "description": "Calculadora de Campo – dimensionamento rápido de adutora, reservação, filtro e bomba de lavagem",
+  "scripts": {
+    "assets": "node scripts/assets.mjs",
+    "dev": "node scripts/assets.mjs && vite",
+    "build": "node scripts/assets.mjs && tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "android:add": "npx cap add android && node scripts/assets.mjs --android",
+    "android:sync": "npm run build && npx cap sync android"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@capacitor/android": "^6.2.0",
+    "@capacitor/core": "^6.2.0",
+    "@capacitor/filesystem": "^6.0.2",
+    "@capacitor/share": "^6.0.3",
+    "exceljs": "^4.4.0",
+    "jspdf": "^2.5.2",
+    "jspdf-autotable": "^3.8.4"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.2.0",
+    "dejavu-fonts-ttf": "^2.37.3",
+    "sharp": "^0.33.5",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.8"
+  },
+  "private": true,
+  "type": "module"
+}
